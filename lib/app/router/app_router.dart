@@ -1,7 +1,4 @@
-
-
 import 'package:fintrack/lib.dart';
-import 'package:go_router/go_router.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   return GoRouter(
@@ -18,21 +15,21 @@ final routerProvider = Provider<GoRouter>((ref) {
         },
       ),
 
-      // GoRoute(
-      //   path: '/login',
-      //   name: RouteNames.login,
-      //   builder: (context, state) {
-      //     return const LoginScreen();
-      //   },
-      // ),
+      GoRoute(
+        path: '/login',
+        name: RouteNames.login,
+        builder: (context, state) {
+          return const LoginScreen();
+        },
+      ),
 
-      // GoRoute(
-      //   path: '/register',
-      //   name: RouteNames.register,
-      //   builder: (context, state) {
-      //     return const RegisterScreen();
-      //   },
-      // ),
+      GoRoute(
+        path: '/register',
+        name: RouteNames.register,
+        builder: (context, state) {
+          return const RegisterScreen();
+        },
+      ),
 
       // GoRoute(
       //   path: '/dashboard',

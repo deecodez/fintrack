@@ -8,10 +8,22 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  void navigate() {
+    context.go(RouteNames.login);
+  }
+
+  @override
+  void initState() {
+    Future.delayed(Duration(seconds: 5), () {
+      navigate();
+    });
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(),
+    return AppScaffold(
+      showAppBar: false,
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: Align(
         alignment: Alignment.center,

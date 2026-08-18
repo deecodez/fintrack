@@ -74,4 +74,5 @@ class AppColors {
   // ============================================================
 
   static const Color transparent = Colors.transparent;
+  static const Color offline = Color(0xFFF59E0B);
 }

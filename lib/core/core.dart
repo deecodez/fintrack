@@ -7,3 +7,5 @@ export 'widgets/app_buttons.dart';
 export 'widgets/app_error_widget.dart';
 export 'widgets/app_loader.dart';
 export 'widgets/app_text_field.dart';
+export 'widgets/app_scaffold.dart';
+export 'utils/utils.dart';
